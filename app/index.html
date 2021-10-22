@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Electron Clock</title>
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/custom.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 box">
+                    <h1 class="display-1" id="clockBanner">Current Time</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-right">
+                    <label>Alarm Time</label>
+                </div>
+                <div class="col-md-4 box text-left">
+                    <input type="time" style="background-color: #42a16b; color: #fff; padding: 1px; border: solid 1px; border-color: rgb(52, 197, 83); border-radius: 3px;" step="1" value="00:00:00" name="newHour" id="newHour">
+                </div>
+            </div>     
+            <div class="row box pt-3">
+                <div class="col-md-6 box">
+                    <button class="btn_app button_success" id="btnClicar" onclick="setAlarm()">Set Alarm</button>
+                </div>
+                <div class="col-md-6 box">
+                    <button class="btn_app button_danger" id="btnClicar" onclick="removeAlarm()">Remove</button>
+                </div>
+            </div>
+            <div class="row box pt-3">
+                <div id="divInfo" class="divInfo">
+                    <div id="divInfoText" class="alert alert-info" role="alert">
+                        <img src="./assets/img/alarm.svg">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script src="assets/js/app.js"></script>
+</html>

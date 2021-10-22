@@ -1,0 +1,30 @@
+{
+  "name": "teste-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/assets/js/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.6",
+    "electron-builder": "^22.11.7"
+  },
+  "build": {
+    "appId": "com.electron.app",
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "unicode": false,
+      "artifactName": "electron_clock_app.exe"
+    }
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0"
+  }
+}

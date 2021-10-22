@@ -1,0 +1,41 @@
+input[type="time"] {
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 120px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-right{
+  display: flex; 
+  justify-content: flex-end;
+}
+.text-left {
+  display: flex;
+  justify-content: flex-start;
+}
+.button {
+  width: 130px !important;
+}
+.divInfo {
+  display: none;
+}
+.btn_app {
+  font-family: Helvetica, sans-serif;
+  width: 120px;
+  height: 30px;
+  border-radius: 6px;
+  border: solid 1px;
+}
+.button_success {
+  background-color: #0E4D92;
+  color: #fff;
+}
+.button_danger {
+  background-color: #DE3163;
+  color: #fff;
+}
